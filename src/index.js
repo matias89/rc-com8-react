@@ -6,14 +6,14 @@ import MyMain from './components/MyMain';
 
 class App extends Component {
     render() {
-        return (
+        return ( 
             <div>
                 <MyHeader />
-                <MyMain />
+                <MyMain / >
                 <MyFooter />
             </div>
         );
     }
 }
 
-render(<App />, document.getElementById('app'));
+render( < App / > , document.getElementById('app'));

@@ -28298,7 +28298,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var MyButton = function MyButton() {
-  return /*#__PURE__*/_react.default.createElement("button", null, "Soy un bot\xF3n");
+  return /*#__PURE__*/_react.default.createElement("div", null, " ", /*#__PURE__*/_react.default.createElement("button", null, " Soy un bot\xF3n "), " ", /*#__PURE__*/_react.default.createElement("h1", null, " adadawwa "));
 };
 
 var _default = MyButton;
@@ -28357,7 +28357,7 @@ var MyHeader = /*#__PURE__*/function (_Component) {
   _createClass(MyHeader, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, "Soy un encabezado"), /*#__PURE__*/_react.default.createElement(_MyButton.default, null));
+      return /*#__PURE__*/_react.default.createElement("header", null, /*#__PURE__*/_react.default.createElement("h1", null, " Soy un encabezado Hijo de Puta "), /*#__PURE__*/_react.default.createElement(_MyButton.default, null));
     }
   }]);
 
@@ -28495,7 +28495,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "36973" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43067" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
