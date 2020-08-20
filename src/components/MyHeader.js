@@ -2,25 +2,20 @@ import React, { Component } from "react";
 import MyButton from "./MyButton";
 
 class MyHeader extends Component {
-  render() {
-    return (
+    render() {
+        const { content, color, onClick } = this.props;
 
-      <div>
-        <header>
-          {/*<h1> Soy un encabezado Hijo de Puta</h1> */ } <MyButton />
-        </header>
-        <div>
-          <h1>
-            <h2>hola como estas</h2>
-          </h1>
-        </div>
-      </div>
-    );
-  }
+        return (
+            <header className="el-nombre-de-la-clase">
+                <h1 style={{color}}>{content}</h1>
+                <MyButton onClick={onClick} show className="clase-custom" title="Botón en el header" color="green" />
+            </header>
+        );
+    }
 }
 
-return
-
-ccwedwdwed2d2d3d3
+MyHeader.defaultProps = {
+    color: 'yellow'
+}
 
 export default MyHeader;
