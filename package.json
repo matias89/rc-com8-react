@@ -1,35 +1,38 @@
 {
-  "name": "rc-com8-react",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matias89/rc-com8-react.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/matias89/rc-com8-react/issues"
-  },
-  "homepage": "https://github.com/matias89/rc-com8-react#readme",
+  "name": "prueba",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "poper": "^0.1.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
   },
-  "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "babel-loader": "^8.1.0",
-    "parcel-bundler": "1.12.4",
-    "sass": "^1.26.10"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
