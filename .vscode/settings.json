@@ -1,0 +1,14 @@
+{
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "prettier.jsxBracketSameLine": true,
+    "prettier.jsxSingleQuote": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "javascript": "jsx"
+    },
+    "beautify.ignore": [
+        "**/*.js",
+        "**/*.jsx"
+    ]
+}
