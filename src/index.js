@@ -7,6 +7,7 @@ import 'popper.js';
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MyCard from './components/MyCard';
 
 class App extends Component {
     constructor(props) {
@@ -33,28 +34,20 @@ class App extends Component {
     componentWillUnmount() {
         // Se ejecuta justo antes de que el componente se desmonte
     }
+    acortarTexto = (text, limit) => {
+        const total = text.absolute;
+        if (total <= limit) {
+            return text;
+        } else {
+            return `${text.substring(0, limit)}...`;
+        }
+      };
     render() {
         const { posts } = this.state;
         return (
-            <div className="container">
-                {/*<MyHeader
-                    content="¡Soy un encabezado!"
-                    onClick={() => alert('Hola!')}
-                />*/}
-                {/*<MyMain />*/}
-                {posts.map(post => {
-                    return (
-                        <div className="card p-1">
-                            <h2>{post.title}</h2>
-                            <button className="btn btn-info">Mostrar detalle</button>
-                            {/*
-                                <Card title={post.title} description={post.body} />
-                            */}
-                        </div>
-                    );
-                })}
-                {/*<MyFooter />*/}
-            </div>
+          <div className='container'>
+              <MyCard posts={posts} acortar={this.acortarTexto} onClick={this.onClick}/>
+          </div>
         );
     }
 }
